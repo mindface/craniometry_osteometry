@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+</head>
+<body>
+<div class="wrapper">
+ <div class="video-box">
+    <p class="text">mp4を推奨しています。</p>
+    <div class="video-box__input-box">
+      <input type="file" id="file" class="file" name="name" />
+    </div>
+    <div class="video-box__video-box">
+      <video src="" controls width="640" height="360" id="video"></video>
+    </div>
+    <p class="hidden">
+      <canvas id="c"></canvas>
+      <button id="move">view</button>
+      <button id="stop">stop</button>
+    </p>
+    <div class="video-box__output-box">
+      <p class="text">骨格が検出されます。</p>
+      <canvas id="v"></canvas>
+    </div>
+  </div>
+</div>
+<script src="./assets/js/bundle.js"></script>
+<script src="./assets/js/global.js"></script>
+</body>
+</html>
